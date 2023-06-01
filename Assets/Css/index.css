@@ -1,0 +1,257 @@
+/* STYLES GENERAUX */
+/* concenant la forme de body */ 
+body {
+  font-family: Avenir, sans-serif;
+  text-align: justify;
+  color: #fff;
+  /* j'ai créé un dégradé linéaire CSS graduel */
+  background: linear-gradient(45deg, #FFCCCC, #CCFFFF);
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+}
+a:hover{
+  color:rgb(23, 22, 21);
+  }
+/*a:visited{ 
+    color: gray;
+  }*/ 
+h3, h4, h5, p, li,.maphoto {
+  font-size: 1.3em;
+  color: #fff; 
+}
+/* j'ai ajusté l'état de survol d'une balise d'ancrage */
+h3:hover, h4:hover, h5:hover, p:hover, li:hover, .maphoto:hover {
+  color: #000;
+}
+h2:hover {
+  color: blue
+}
+h2:hover{
+  transform: scale(1.2);
+}
+
+/* body:hover {
+  color: black;
+} */
+
+/* concenant uniqement le titre h1 */ 
+h1 {
+    color: rgb(24, 23, 23);
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    /*mettre en majuscule h1 */
+    /* text-transform: uppercase; */
+}
+h1:hover{
+  transform: scale(1.3);
+}
+
+.softSkills {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+  header h1{
+  width: 90%;
+  }
+  /* .imglogo:hover { 
+    color: darkgoldenrod;
+  }*/
+/* concenant uniqement le titre h2 */ 
+h2 {
+    /* mettre en majuscule h2 */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    background-color: lightgrey;
+    color:#6a5acd;
+    text-align: center; 
+    margin: 20px 0px;
+    width: 99%; 
+    vertical-align: middle; 
+}
+   
+/*SECTIONS-concenant toutes les sections */ 
+section {
+  display: flex; 
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 10px;
+ /* background-color: rgb(60, 146, 163); */
+
+ /* j'ai utilisé un dégradé linéaire CSS pour créer un élément rayé */
+ background: repeating-linear-gradient(
+      60deg,
+      rgb(218, 218, 157) 0px,
+      rgb(136, 178, 218) 40px,
+      rgb(147, 189, 147) 40px,
+      rgb(153, 188, 197) 80px);
+}
+
+/* Concernant uniquement contact-informations */
+ .box-container {
+  display: flex;
+  align-items: justify; 
+  flex-direction: column;
+}
+ /* Concernant uniquement my photo */
+.maphoto {
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   border-radius: 50%;
+   border-style: solid;
+   margin-left: auto;
+   margin-right: auto;
+}
+/* Concernant uniquement les contacts */
+.contact0 {
+  display: flex;
+  flex-direction: column; 
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* Concernant uniquement les paragraphes de contacts */
+.p1 {
+  display: flex;
+  color: rgb(219, 130, 21);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 120%; 
+  margin-left: 30px;
+  /* j'ai défini la hauteur de ligne des paragraphes */
+  line-height: 0px; 
+}
+.p2 {
+  display: flex;
+  color: white;
+  font-style: italic;
+  font-size: 120%;
+   /* j'ai défini la hauteur de ligne des paragraphes */
+  line-height: 0px; 
+}
+/* j'ai ajusté l'état de survol d'une balise d'ancrage */
+.p2:hover {
+  color: black;
+/* j'ai utilisé la transform propriété pour mettre à l'échelle l' div 
+élément à 1,1 fois sa taille d'origine lorsqu'un utilisateur le survole.
+ */  
+  transform: scale(1.1);
+}
+.information{
+  text-align: justify;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.competence {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
+  min-width: 90%;
+  display:inline-block;
+  text-align: center;
+  border-style: solid;
+  background-color: rgb(109, 177, 190); 
+}
+/* j'ai ajusté l'état de survol d'une balise d'ancrage */
+.competence:hover, .experience:hover, .formationdiplome:hover, .divers:hover {
+color: aqua;
+}
+.technique{
+  text-align: justify;
+  overflow: hidden;
+}
+/*SECTIONS - Concernant les éxpériences professionnelles */
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-style: solid;
+  background-color: rgb(99, 162, 175);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* Concernant chaque éxpérience professionnelle */
+.experience2 {
+  display: block;
+  border-style: solid;
+  background-color: rgb(102, 174, 189);
+  padding: 10px;
+  margin: 10px;
+}
+.experience3 {
+  font-size: 0em;
+}
+.experience4 {
+  font-size: 1em;
+  font-weight: normal;
+}
+.experience5 {
+  font-size: 1em;
+}
+/*SECTIONS - concernant que les sections formationdiplome */
+.formationdiplome {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-style: solid;
+  background-color: rgb(60, 146, 163); 
+}
+
+/*SECTIONS - concernant que les sections divers */
+.divers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-style: solid;
+  background-color: rgb(60, 146, 163);
+  padding-bottom: 10px;
+  margin-bottom: 10px; 
+}
+/* concernant tous les images du logo */
+.imglogo {
+ /* width: 50%; */
+ display: inline-block;
+ width: 130px;
+ /* transform: scale(1.5); */
+}
+.imglogo:hover {
+  color: darkgoldenrod;
+}
+/* concernant toutes les activités */
+.activites {
+  display: block;
+  width: 130%;
+  text-align: center;
+  /* padding: auto;  */
+  padding: 5px;
+  margin: auto;
+}
+/* concernant tous les logo */
+.logo {
+  /* width: 30%; */
+  display: inline-block;
+  width: 240px;
+  padding: 20px;
+  margin: 0px;
+}
+/* style Css version bureau */
+@media screen and (min-width: 980px) {
+  section {
+    width: 99%;
+    /* box-shadow: 0px 0px 10px #bbb; */
+  }
+
+}
+/*.responsive-img {
+  max-width: 90%;
+  height: auto;
+}*/
