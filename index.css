@@ -157,6 +157,47 @@ section {
   padding-left: 10px;
   padding-right: 20px;
 }
+/* une animation pour que le texte traverse la fenêtre du navigateur */
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  overflow: visible;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 200%;
+  }
+  /* une autre étape à partir de l'animation précédente */
+  75% {
+    font-size: 150%;
+    margin-left: 25%;
+    width: 100%;
+  }
+}
+/* répété l'animation pour Obtenir un effet aller-retour */
+/* p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} */
+p {
+  animation: 3s 2 alternate slidein;
+}
+/*
+  Ici, notre animation va se jouer
+  - après 1 seconde d'attente,
+  - pendant 3 secondes,
+  - 2 fois de suite,
+  - en alternant début-fin/fin-début,
+*/
 .competence {
   /* display: flex;
   flex-direction: row;
@@ -255,6 +296,9 @@ color: aqua;
   width: 240px;
   padding: 20px;
   margin: 0px;
+}
+.logo:hover {
+  transform: scale(1.2);
 }
 /* style Css version bureau */
 @media screen and (min-width: 980px) {
