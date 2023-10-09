@@ -11,12 +11,12 @@ body {
   font-size: 1em;
 }
 
-h3, h4, h5, p, li,.maphoto {
+h3, h4, h5, p, li,.my-picture {
   font-size: 1.3em;
   color: #fff; 
 }
 /* j'ai ajusté l'état de survol d'une balise d'ancrage */
-h3:hover, h4:hover, h5:hover, p:hover, li:hover, .maphoto:hover {
+h3:hover, h4:hover, h5:hover, p:hover, li:hover, .my-picture:hover {
   color: #000;
 }
 
@@ -104,7 +104,7 @@ section {
   flex-direction: column;
 }
  /* Concernant uniquement my photo */
-.maphoto {
+.my-picture {
    display: flex; 
    flex-direction: row;
    flex-wrap: wrap;
