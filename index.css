@@ -159,7 +159,7 @@ section {
 }
 /* une animation pour que le texte traverse la fenêtre du navigateur */
 p {
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
   overflow: visible;
 }
@@ -189,7 +189,7 @@ p {
   animation-direction: alternate;
 } */
 p {
-  animation: 3s 2 alternate slidein;
+  animation: 1s 2 alternate slidein;
 }
 /*
   Ici, notre animation va se jouer
